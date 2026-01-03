@@ -20,6 +20,7 @@ The database consists of the following tables:
 2. Create the database (if it doesn't exist) and select it:
 
 CREATE DATABASE bookstore;
+
 USE bookstore;
 
 3. Run the SQL scripts in the following order:
