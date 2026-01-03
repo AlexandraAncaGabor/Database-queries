@@ -19,9 +19,10 @@ The database consists of the following tables:
 
 2. Create the database (if it doesn't exist) and select it:
 
+```sql
 CREATE DATABASE bookstore;
-
 USE bookstore;
+```
 
 3. Run the SQL scripts in the following order:
 1_books.sql → 3_users.sql → 2_orders.sql → 4_reviews.sql → 5_queries.sql
