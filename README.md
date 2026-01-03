@@ -33,3 +33,6 @@ You can run the scripts in any SQL client on macOS, Windows, or Linux.
 
 This repository is useful for practicing database creation, data manipulation, and query writing.
 
+
+✨ Guided by curiosity, committed to quality.
+
