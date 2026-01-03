@@ -29,6 +29,16 @@ FROM books b
 JOIN reviews r ON b.id = r.book_id
 GROUP BY b.title;
 
+--  Simple INNER JOIN between orders and users to see who placed each order
+SELECT o.id AS order_id, u.name AS user_name, o.status AS order_status
+FROM orders o
+INNER JOIN users u ON o.user_id = u.id;
+
+-- LEFT JOIN to see all books and their reviews, including books without reviews
+SELECT b.title AS book_title, r.rating, r.comment
+FROM books b
+LEFT JOIN reviews r ON b.id = r.book_id;
+
 -- Get all users who are customers
 SELECT name, email
 FROM users
@@ -58,3 +68,12 @@ WHERE title = 'The Boyfriend';
 UPDATE books
 SET genre = 'Mystery & Thriller'
 WHERE title = 'Before We Were Strangers';
+
+
+-- Delete reviews with rating less than 3
+DELETE FROM reviews
+WHERE rating < 3;   
+
+-- Delete a specific user
+DELETE FROM users
+WHERE name = 'Raluca Florescu'
